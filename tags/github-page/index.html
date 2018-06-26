@@ -215,7 +215,7 @@
 <li>只上傳dist底下的檔案</li>
 <li>從webpack config設定</li>
 </ol>
-<p>第一種只要每次build的就要重新修改一次，有點麻煩，第二種則是不能將整個專案傳上去，這樣協作或是在不同地方想拉下來做就很不方便了<br>所以我選擇從webpack config設定，雖然vue cli已經出到3.0版本了，但大多數人應該還在使用2.0版本，這邊就一起說明了！</p>
+<p>第一種只要每次build的就要重新修改一次，有點麻煩，第二種則是不能將整個專案傳上去，這樣協作或是在不同地方想拉下來做就很不方便，所以我選擇從webpack config設定，雖然vue cli已經出到3.0版本了，但大多數人應該還在使用2.0版本，這邊就一起說明了！</p>
 <h3 id="vue-cli-2-0"><a href="#vue-cli-2-0" class="headerlink" title="vue cli 2.0"></a>vue cli 2.0</h3><p><em>&lt;project name&gt;/config/index.js</em></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">build: &#123;</span><br><span class="line">  ...</span><br><span class="line">  assetsPublicPath: &apos;./&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>改成這樣之後，只要build完之後的index.html就會將 資源引入改為 <em>./</em></p>
